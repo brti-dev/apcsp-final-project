@@ -22,9 +22,9 @@ Design your own digital project and publish it for others to build on.
 
 - Develop a project plan from design to production.
 - Could be any digital product including…
-- Web or mobile app
-- Command line program
-- Library
-- Plugin for existing software
+  - Web or mobile app
+  - Command line program
+  - Library
+  - Plugin for existing software
 - Write a program in the language of your choice – Python, Java, JavaScript, etc.
 - Maintain and publish your project code on Github as a public open-source repository.
