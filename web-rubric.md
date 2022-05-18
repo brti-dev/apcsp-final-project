@@ -1,6 +1,7 @@
 # Webpage for a Purpose - Project Rubric
 
 | Key Concept | Extensive Evidence | Convincing Evidence | Limited Evidence | No Evidence |
+| --- | --- | --- | --- | --- |
 | **Website purpose** | The website has a clear purpose and each page supports that purpose in its own way. | The website has a purpose, and most pages support that purpose. | It is difficult to understand the purpose of the website, or pages are not clearly related. | The website does not appear to have a purpose, or there is only one page on the site. |
 | **Errors in CSS and HTML pages** | Website uses both CSS and HTML. There are very few syntax errors and the page displays correctly. | Website uses both HTML and CSS. The page renders correctly, but there are some syntax errors. | Website uses both HTML and CSS. Most of the page renders correctly, but there are significant syntax errors. | The website does not use both HTML and CSS. Syntax errors prevent the page from being rendered correctly. |
 | **Stylesheet** | All of the pages use the same stylesheet to give them the same type of look and feel. | Multiple pages share the same style sheet and pages generally have the same look and feel. | Pages use stylesheets and share some of the same look and feel. | The pages do not have the same look and feel or do not link to a stylesheet. |
