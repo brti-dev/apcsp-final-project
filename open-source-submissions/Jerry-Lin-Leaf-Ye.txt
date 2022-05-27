@@ -1,0 +1,13 @@
+URL for website: https://apcsp-jerry-lin.github.io/
+URL for repository: https://github.com/APCSP-JERRY-LIN/APCSP-JERRY-LIN.github.io
+
+html
+
+How did you test your program? Describe your testing process in detail.
+We test our program by two means. Firstly, we will open our website on our own computer in the browser to see if there are any problems on the overall layout. Then, we click every link inside this website to see whether it will jump to the corresponding page. Next, we open our website on different devices with different size--phone, pad, and computer. The second step is to show others our work, observe them while using the website, and ask for advice. 
+
+What is ONE piece of user feedback you got that was most valuable in improving your program?
+The piece of the most valuable feedback is given by Mr. Berti. He told us to see whether the website can fit to different screen size well. 
+
+Your code is open source. Explain ONE way you hope someone will use your program code.
+We hope the school can use our website as a propaganda tool to students and parents who want to know more and join Hanvos-Kent. Since it’s an open source website, the school can use it freely .

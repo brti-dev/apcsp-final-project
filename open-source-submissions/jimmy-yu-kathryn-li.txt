@@ -1,0 +1,19 @@
+1.What is the URL of your repository? 
+https://github.com/KathrynLLL/KathrynLLL.github.io
+
+2.What programming languages did you use to build this program?
+We used HTML and CSS to build this program. 
+
+3.How did you test your program? Describe your testing process in detail.
+We test the URL of our repository on two browsers. Then we test it with different computers by sending the link to other people. Lastly, we test the link on phones and pads.
+
+4.What is ONE piece of user feedback you got that was most valuable in improving your program?
+We gain the best feedback from Jerry Lin. Jerry pointed out the format is not fit with the text and images. He reminded us about the unfit code format so we can start over with a better version. 
+
+5.Your code is open source. Explain ONE way you hope someone will use your program code.
+We wish the user can develop an interest in the FIA Formula 1 World Championship. When the user has a question about FIA Formula 1 World Championship, they can find some answers in our program. This is an open-source, anybody can use this website to introduce FIA Formula 1 World Championship to others.
+
+
+A small note: [PLEASE READ THIS]
+f1ken.top
+We developed an open-source website before we are informed that the website should be published on Github. For that week, Kathryn is always taking AP tests so she missed school. After we developed the website after the weekend, we learned from Jerry that the open-source needed to be published through Github. However, the difference in the code format makes it harder to transform. We only have time for one page. So, please don’t make our work in vain, please visit this link: f1ken.top.
