@@ -1,0 +1,90 @@
+<!--
+  Assignment: Button Clicker App
+  
+  Instructions:
+    1. Style the app so the input is featured prominently and the app is
+       accessible on different screen sizes.
+    2. Write a JavaScript program that tracks the number of clicks and displays
+       it in the output.
+    3. Use CSS and JavaScript so that the "learn more" paragraph at the bottom 
+       of the page appears and disappears when the user clicks the button.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button Clicker</title>
+    <style>
+      body {
+        font-family: 'Helvetica Neue', Helvetica, Arial;
+        font-size: 30px;
+      }
+      .color-gradient {
+        background-color: #f3ec78;
+        background-image: linear-gradient(90deg, #12c2e9, #c471ed, #f64f59);
+        background-size: 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      #output {
+        margin: 20px 0;
+      }
+      #more {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="color-gradient">Button Clicker: The App</h1>
+    <button id="clicker" class="big-button">
+      <b>click me</b>
+    </button>
+    <div id="output"></div>
+
+    <hr />
+
+    <h2>About this app</h2>
+    <p>
+      This app was created by AP CSP Principles class at Ningbo Kent School.
+    </p>
+    <button>Click to learn more</button>
+    <p id="more">
+      This app is a simple app that tracks how many clicks have been clicked on
+      the clicker. It really is very nice. It's popular with people who like to
+      click things. Children love it, adults can't get enough, and the elderly
+      are obsessed. Ullamco officia eu sunt velit ad fugiat excepteur
+      consectetur sit enim excepteur.
+    </p>
+
+    <script>
+      /**
+       * JavaScriptQuick Reference:
+       *
+       * Access an element: document.getElementById("idName")
+       *
+       * Change the inner content of an element: element.innerHTML = "contents"
+       * @example document.getElementById("output").innerHTML = "foobar"
+       *
+       * Change the class of an element: element.className = "className"
+       * @example document.getElementById("output").className = "highlight"
+       */
+      const CLICKER = document.getElementById('clicker')
+      const OUTPUT = document.getElementById('output')
+      var clicks = 0
+
+      setOutput()
+
+      clicker.addEventListener('click', function () {
+        console.log('Clicker was clicked')
+        setOutput()
+      })
+
+      function setOutput() {
+        OUTPUT.innerHTML = '666'
+      }
+    </script>
+  </body>
+</html>
