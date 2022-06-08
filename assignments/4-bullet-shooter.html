@@ -1,0 +1,80 @@
+<!--
+  Bullet Shooter Game
+
+  Challenge: The player character is far too overpowered. His gun fires at too
+  fast a rate, killing all opponents in his path. Add some challenge to the
+  game by adding a small interval between the firing of the weapon.
+
+  Tip: Make use of JavaScript's setTimeout function.
+
+  setTimeout(): Set a timer
+  @param {function} Function to call when the timer expires
+  @param {number} Time in milliseconds to set timer
+  @example:
+  setTimeout(function () {
+    console.log('timer is finished')
+  }, 100) // 100 milliseconds == 1/10 of 1 second
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bullet Shooter</title>
+    <style>
+      body {
+        font-family: monospace;
+        font-size: 60px;
+      }
+      .bullet-trajectory {
+        background-color: #f3ec78;
+        background-image: linear-gradient(90deg, #f64f59, #d18cf4);
+        background-size: 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .bullet {
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="game">
+      <span id="player">(⊃｡•́‿•̀｡)⊃</span>
+      <span class="bullet-trajectory">
+        <span id="bullet-1" class="bullet">&lt;3</span>
+        <span id="bullet-2" class="bullet">&lt;3</span>
+        <span id="bullet-3" class="bullet">&lt;3</span>
+        <span id="bullet-4" class="bullet">&lt;3</span>
+        <span id="bullet-5" class="bullet">&lt;3</span>
+      </span>
+    </div>
+    <script>
+      const NUM_BULLETS = 5
+      const INTERVAL = 100 // 100 milliseconds = 1/10 of 1 second
+
+      function fire() {
+        let audio = new Audio('../assets/pew.mp3')
+        audio.play()
+
+        for (let i = 1; i <= NUM_BULLETS; i++) {
+          // Bullet appears along trajectory
+          setTimeout(function () {
+            document.getElementById('bullet-' + i).style.visibility = 'visible'
+          }, 100 * i)
+          // Bullet disappears
+          setTimeout(function () {
+            document.getElementById('bullet-' + i).style.visibility = 'hidden'
+          }, 150 * i)
+        }
+      }
+
+      // Handle keyboard keydown event
+      window.addEventListener('keydown', function (event) {
+        // Fire bullet when player clicks X key
+        if (event.key == 'x') {
+          fire()
+        }
+      })
+    </script>
+  </body>
+</html>
