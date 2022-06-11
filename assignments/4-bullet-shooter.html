@@ -61,12 +61,14 @@
       <div id="output"></div>
     </div>
     <script>
+
       const OUTPUT = document.getElementById('output')
       const ENEMY = document.getElementById('enemy')
       const numBullets = 5 // Number of bullets animated on the trajectory
       const interval = 100 // 100 milliseconds = 1/10 of 1 second
       const enemies = ['😡', '😒', '😐', '😊', '🥰']
       let hits = 0 // Number of times the enemy is hit by a bullet
+      var x="able to fire"
 
       setEnemy()
       setOutput()
@@ -91,20 +93,41 @@
       }
 
       function setEnemy() {
-        ENEMY.innerHTML = enemies[0]
+      switch(hits/5){
+      case 0:
+      ENEMY.innerHTML = enemies[0];
+      break;
+      case 1:
+      ENEMY.innerHTML = enemies[1];
+      break;
+      case 2:
+      ENEMY.innerHTML = enemies[2];
+      break;  
+      case 3:
+      ENEMY.innerHTML = enemies[3];
+      default:
+      ENEMY.innerHTML = enemies[4];
+      break;
+       }
       }
 
       function setOutput() {
         // Set output here
-        OUTPUT.innerHTML = 'blah blah blah'
+        var hit= (hits>=5) ? ((hits>=10) ? (hits/5) : 1): 0;
+        OUTPUT.innerHTML = hit + ' hits'
       }
 
       // Handle keyboard keydown event
       window.addEventListener('keydown', function (event) {
         // Fire bullet when player clicks X key
         if (event.key == 'x') {
-          fire()
-        }
+         if (x=="able to fire") {
+         fire()
+         setOutput()}
+         x = "loading";
+         setTimeout(function() {
+         x = "able to fire";
+        }, interval);}
       })
     </script>
   </body>
