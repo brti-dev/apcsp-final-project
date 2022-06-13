@@ -50,3 +50,5 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+assignments/UNASSIGNED-css-specificity.html
+.DS_Store
