@@ -1,0 +1,116 @@
+<!-- 
+  Button Clicker v2.0
+
+  1. Use syntactic sugar to set the app output to the following:
+      - Output shows "0 clicks registered" at first
+      - Output shows "1 click registered" after a single click
+      - Output shows "n clicks registered" for all other output, 
+        where `n` is the number of clicks
+  2. Implement the "Challenge Mode", but ONLY if the checkbox is checked.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Button Clicker</title>
+    <style>
+      body {
+        font-family: 'Helvetica Neue', Helvetica, Arial;
+        font-size: 30px;
+      }
+      .color-gradient {
+        background-color: #f3ec78;
+        background-image: linear-gradient(90deg, #12c2e9, #c471ed, #f64f59);
+        background-size: 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      #output {
+        margin: 20px 0;
+      }
+      .big-button {
+        padding: 20px 40px;
+        background-color: hotpink;
+        font-size: 200%;
+        color: white;
+        border: 3px solid #f64f59;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .big-button:hover {
+        background-color: lightpink;
+        border-color: lightpink;
+      }
+      .big-button:active {
+        background-color: #12c2e9;
+        border-color: #12c2e9;
+      }
+      .form {
+        font-size: 60%;
+      }
+      .initially-hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="color-gradient">Button Clicker: The App</h1>
+    <button id="clicker" class="big-button">click me</button>
+    <div id="output"></div>
+    <div id="settings" class="form">
+      <h2>Settings</h2>
+      <label>
+        <input type="checkbox" name="challenge-mode" id="input-challenge" />
+        Challenge Mode
+      </label>
+      <p id="form-challenge-expanded" class="initially-hidden">
+        Clicks can only be registered every
+        <input
+          type="number"
+          name="milliseconds"
+          id="input-milliseconds"
+          size="5"
+        />
+        milliseconds
+      </p>
+    </div>
+
+    <script>
+      // I/O elements
+      const CLICKER = document.getElementById('clicker')
+      const OUTPUT = document.getElementById('output')
+      const CHECKBOX = document.getElementById('input-challenge')
+      const FORM_CHALLENGE_EXPANDED = document.getElementById(
+        'form-challenge-expanded'
+      )
+      const INPUT_MILLISECONDS = document.getElementById('input-milliseconds')
+
+      // Other variables
+      let clicks = 0
+      let interval = 500
+
+      // Set the form to the default value
+      INPUT_MILLISECONDS.value = interval
+
+      setOutput()
+
+      CLICKER.addEventListener('click', function () {
+        clicks++
+        setOutput()
+      })
+
+      CHECKBOX.addEventListener('change', function () {
+        if (CHECKBOX.checked) {
+          FORM_CHALLENGE_EXPANDED.classList.remove('initially-hidden')
+        } else {
+          FORM_CHALLENGE_EXPANDED.classList.add('initially-hidden')
+        }
+      })
+
+      function setOutput() {
+        // Set output here
+        OUTPUT.innerHTML = 'blah blah blah'
+      }
+    </script>
+  </body>
+</html>
