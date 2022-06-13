@@ -1,0 +1,138 @@
+<!--
+  Bullet Shooter Game
+
+  In this game, the player character is far too overpowered. His gun fires 
+  at too fast a rate, killing all opponents in his path.
+  
+  Modifications:
+  1. Add some challenge to the game by adding a small interval between the 
+     firing of the weapon.
+  2. Use syntactic sugar to set the app output to the following:
+      - Output shows "0 hits" at first
+      - Output shows "1 hit" after a single hit
+      - Output shows "n hits" for all other output, where `n` is the number 
+      of hits
+  3. Use a switch statement to output the enemy sprite. The enemy's facial
+     expression should change as it gets hit by bullets.
+
+  Tip: Make use of JavaScript's setTimeout function.
+
+  setTimeout(): Set a timer
+  @param {function} Function to call when the timer expires
+  @param {number} Time in milliseconds to set timer
+  @example:
+  setTimeout(function () {
+    console.log('timer is finished')
+  }, 100) // 100 milliseconds == 1/10 of 1 second
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bullet Shooter</title>
+    <style>
+      body {
+        font-family: monospace;
+        font-size: 60px;
+      }
+      .bullet-trajectory {
+        background-color: #f3ec78;
+        background-image: linear-gradient(90deg, #f64f59, #d18cf4);
+        background-size: 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .bullet {
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="game">
+      <span id="player">(⊃｡•́‿•̀｡)⊃</span>
+      <span class="bullet-trajectory">
+        <span id="bullet-1" class="bullet">&lt;3</span>
+        <span id="bullet-2" class="bullet">&lt;3</span>
+        <span id="bullet-3" class="bullet">&lt;3</span>
+        <span id="bullet-4" class="bullet">&lt;3</span>
+        <span id="bullet-5" class="bullet">&lt;3</span>
+      </span>
+      <span id="enemy"></span>
+      <div id="output"></div>
+    </div>
+    <script>
+      const OUTPUT = document.getElementById('output')
+      const ENEMY = document.getElementById('enemy')
+      const numBullets = 5 // Number of bullets animated on the trajectory
+      const interval = 100 // 100 milliseconds = 1/10 of 1 second
+      const enemies = ['😡', '😒', '😐', '😊', '🥰']
+      let hits = 0 // Number of times the enemy is hit by a bullet
+      let canFire = true
+
+      setEnemy()
+      setOutput()
+
+      function fire() {
+        if (!canFire) {
+          return
+        }
+
+        canFire = false
+        setTimeout(function () {
+          canFire = true
+        }, 500)
+
+        let audio = new Audio('../assets/pew.mp3')
+        audio.play()
+
+        for (let i = 1; i <= numBullets; i++) {
+          // Bullet appears along trajectory
+          setTimeout(function () {
+            document.getElementById('bullet-' + i).style.visibility = 'visible'
+          }, 100 * i)
+          // Bullet disappears
+          setTimeout(function () {
+            document.getElementById('bullet-' + i).style.visibility = 'hidden'
+          }, 150 * i)
+        }
+
+        hits++
+        setEnemy()
+        setOutput()
+      }
+
+      function setEnemy() {
+        switch (hits) {
+          case 0:
+            ENEMY.innerHTML = enemies[0]
+            break
+          case 5:
+            ENEMY.innerHTML = enemies[1]
+            break
+          case 10:
+            ENEMY.innerHTML = enemies[2]
+            break
+          case 20:
+            ENEMY.innerHTML = enemies[3]
+            break
+          case 50:
+            ENEMY.innerHTML = enemies[4]
+            break
+        }
+      }
+
+      function setOutput() {
+        // Set output here
+        OUTPUT.innerHTML = hits + ' hits'
+      }
+
+      // Handle keyboard keydown event
+      window.addEventListener('keydown', function (event) {
+        // Fire bullet when player clicks X key
+        if (event.key == 'x') {
+          fire()
+        }
+      })
+    </script>
+  </body>
+</html>
