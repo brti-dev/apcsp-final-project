@@ -1,0 +1,37 @@
+# README
+
+This is our AP CSP final project about the Forbidden City. URL: https://github.com/KaiezZ04/Jacky-zhou-Jonathan-Tang-csp-final-project.git
+
+# Built With
+
+- HTML
+- CSS
+- JAVA
+
+# Installation
+
+They can use the URL to get access to our repository folder in Github. In there are the files of our webpage. After they put it into one folder, they may open the webpage.
+
+# Contributing
+
+After they get access to our webpage, anyone can do editing to it.
+
+# License
+
+“Forbidden City.” The China Guide, https://www.thechinaguide.com/sight/The-Forbidden-City.
+王一.css-1cd9gw4{margin-left:.3em;} . “故宫游览攻略（门票，旅游路线）.” 知乎专栏, https://zhuanlan.zhihu.com/p/391450024.
+“Https://Www.hoyoh.com.” 豪友网, https://www.hoyoh.com/shuoshuo/115575.html.
+山羊の前端小窝 . “[CSS+JS]这该死的高级感 滚轮视差响应_哔哩哔哩_bilibili.” _哔哩哔哩_bilibili, 4 July 2021, https://www.bilibili.com/video/BV1Ag411u7RH?p=1&amp;share_medium=iphone&amp;share_plat=ios&amp;share_source=COPY&amp;share_tag=s_i×tamp=1655864135&amp;unique_k=quVlf0H.
+
+
+5 questions:
+What is the URL of your repository?
+https://github.com/KaiezZ04/Jacky-zhou-Jonathan-Tang-csp-final-project.git
+What programming languages did you use to build this program?
+Html, CSS, Java
+How did you test your program? Describe your testing process in detail.
+Refresh every time after each change. Command S, Command R
+What is ONE piece of user feedback you got that was most valuable in improving your program?
+Having a interactive page that will attract the user.
+Your code is open source. Explain ONE way you hope someone will use your program code.
+Other can use this open source website to build a tour guide to attract visitors.
