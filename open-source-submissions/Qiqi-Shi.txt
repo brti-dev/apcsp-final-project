@@ -1,0 +1,5 @@
+1. https://github.com/Paozi-fly/Qiqi-csp-project
+2. java script and html.
+3. I test on my computer for a long time. Debuging the stuff error.
+4. There should be a delete function. And I add it in.
+5. By changing the number limit in the code. People can get a calculator for the fish selling in the game SCUM.
