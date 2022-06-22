@@ -1,0 +1,17 @@
+URL for website: https://funngus.github.io/
+URL for repository: https://github.com/Funngus/Funngus.github.io
+
+What programming languages did you use to build this program?
+html
+css
+
+How did you test your program? Describe your testing process in detail.
+I use cmd to run hexo command "hexo server" to open a local server to preview my blog. Then, each time when I saved the documents in
+my "blog" file after I changed them, I refresh the local server to see how it looks.
+
+What is ONE piece of user feedback you got that was most valuable in improving your program?
+To make the elements in my blog better to see, and make the page show faster.
+
+Your code is open source. Explain ONE way you hope someone will use your program code.
+I'd like to let others to change the things in my code as they want without use my articals there (in the future) for commercial
+purposes.
