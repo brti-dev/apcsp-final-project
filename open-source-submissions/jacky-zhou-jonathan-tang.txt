@@ -1,0 +1,10 @@
+What is the URL of your repository?
+https://github.com/KaiezZ04/Jacky-zhou-Jonathan-Tang-csp-final-project.git
+What programming languages did you use to build this program?
+Html, CSS, Java
+How did you test your program? Describe your testing process in detail.
+Refresh every time after each change. Command S, Command R
+What is ONE piece of user feedback you got that was most valuable in improving your program?
+Having a interactive page that will attract the user.
+Your code is open source. Explain ONE way you hope someone will use your program code.
+Other can use this open source website to build a tour guide to attract visitors.
