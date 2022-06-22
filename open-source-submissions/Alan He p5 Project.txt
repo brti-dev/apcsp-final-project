@@ -1,0 +1,9 @@
+1. https://github.com/He-03-Alan/Alan-He.txt
+
+2. For this project, I only used HTML as the programming language.
+
+3. I test my program by looking at each single line of the code and try to run it to see if each functionality does work. (especially buttons that I added)
+
+4. It is better for me to add more CSS with styles for my website. My original website is kind of odd for the overall ID.
+
+5. I think others will beneficial from my code in CSS. I did put a lot of efforts to make the website clean, tidy, easy to read. Also, other strategies about the format of the website is also perfect to web developers as reference. I also hope others can develop their interest with this anime and try to watch it.(if they have the interest with that)
