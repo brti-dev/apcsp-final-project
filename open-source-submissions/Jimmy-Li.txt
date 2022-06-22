@@ -1,0 +1,9 @@
+1. https://github.com/JmmyLi/Hall-of-Famous-Vtubers/tree/main
+
+2. I used HTML, CSS and javascript to build this program.
+
+3. I test my program by looking at the html file on the Chrome browser, modifying the css style on the browser and use the console in the browser to debug, and finally made changes to the local files. 
+
+4. One of the feedbacks I got from my classmate is that for each of the vtuber's profile, I need to add url link to their main platform to let the user easier to get more information abot the vtubers. 
+
+5. I hope the users who are newly to the vtubers world get the overall knowledge of the famous vtubers and help other DDs to know more about ther famous vtubers they don't know. 
