@@ -1,0 +1,15 @@
+What is the URL of your repository?
+https://github.com/KaiezZ04/Jacky-zhou-Jonathan-Tang-csp-final-project.git
+
+What programming languages did you use to build this program?
+We use Html, CSS, Java script
+
+How did you test your program? Describe your testing process in detail.
+We refresh the page after we make any changes. All the time we tries to figure out the function of position, size, and other functions that will help us to make the page looks nice on every screen.
+
+What is ONE piece of user feedback you got that was most valuable in improving your program?
+From Mr.Berti. Applying our first page to different size of screen. 
+
+Your code is open source. Explain ONE way you hope someone will use your program code.
+Other can use this open source website to build a tour guide to attract visitors who want to go to the forbidden city. 
+
