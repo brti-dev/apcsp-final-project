@@ -1,4 +1,5 @@
-1. https://github.com/JmmyLi/Hall-of-Famous-Vtubers/tree/main
+1.website: https://jmmyli.github.io/Hall-of-Famous-Vtubers/ 
+  github repository: https://github.com/JmmyLi/Hall-of-Famous-Vtubers/tree/main
 
 2. I used HTML, CSS and javascript to build this program.
 
@@ -7,3 +8,5 @@
 4. One of the feedbacks I got from my classmate is that for each of the vtuber's profile, I need to add url link to their main platform to let the user easier to get more information abot the vtubers. 
 
 5. I hope the users who are newly to the vtubers world get the overall knowledge of the famous vtubers and help other DDs to know more about ther famous vtubers they don't know. 
+
+PS: There are some issues about the displaying of the images with URLs, and I don't know that is there any easier way instead of continue to upload images to the repository?
