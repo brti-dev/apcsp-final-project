@@ -1,0 +1,14 @@
+What is the URL of your repository?
+https://github.com/KaiezZ04/Jacky-zhou-Jonathan-Tang-csp-final-project.git
+
+What programming languages did you use to build this program?
+Html, CSS, Java
+
+How did you test your program? Describe your testing process in detail.
+We first write the program, then we refresh to see is there any bugs. We also invite out friend Clark to use our web. We didn't notice the first page has bug until we change the shape of safari. Now the problem got fixed and everthing works well. 
+
+What is ONE piece of user feedback you got that was most valuable in improving your program
+Our first page isn't suitable for all screen. If we don't fix it, we will lose phone users.
+
+Your code is open source. Explain ONE way you hope someone will use your program code.
+Other can use this open source website to build a tour guide to attract visitors. Beijing Tourism can use it to introduce the visiting route to foreign people. !So far, this visitng route is the best.  
